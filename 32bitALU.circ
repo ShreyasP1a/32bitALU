@@ -3,8 +3,8 @@
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="fanout" val="32"/>
-      <a name="incoming" val="32"/>
+      <a name="fanout" val="1"/>
+      <a name="bit1" val="0"/>
     </tool>
     <tool name="Pin">
       <a name="facing" val="west"/>
@@ -278,24 +278,33 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(140,160)" to="(330,160)"/>
-    <wire from="(120,190)" to="(120,290)"/>
     <wire from="(140,160)" to="(140,170)"/>
-    <wire from="(130,200)" to="(130,400)"/>
     <wire from="(120,190)" to="(330,190)"/>
+    <wire from="(120,240)" to="(330,240)"/>
     <wire from="(110,400)" to="(130,400)"/>
     <wire from="(120,140)" to="(330,140)"/>
     <wire from="(340,170)" to="(340,180)"/>
     <wire from="(130,150)" to="(130,200)"/>
+    <wire from="(130,200)" to="(130,250)"/>
     <wire from="(120,140)" to="(120,190)"/>
+    <wire from="(120,190)" to="(120,240)"/>
+    <wire from="(120,240)" to="(120,290)"/>
     <wire from="(130,100)" to="(140,100)"/>
+    <wire from="(130,250)" to="(130,400)"/>
     <wire from="(110,290)" to="(120,290)"/>
     <wire from="(130,150)" to="(330,150)"/>
     <wire from="(130,200)" to="(330,200)"/>
     <wire from="(140,170)" to="(340,170)"/>
+    <wire from="(130,250)" to="(330,250)"/>
     <wire from="(360,150)" to="(400,150)"/>
     <wire from="(360,190)" to="(400,190)"/>
+    <wire from="(360,240)" to="(400,240)"/>
     <wire from="(140,100)" to="(140,160)"/>
     <comp loc="(360,150)" name="Shifter"/>
+    <comp lib="6" loc="(396,230)" name="Text">
+      <a name="text" val="Comparator"/>
+    </comp>
+    <comp loc="(360,240)" name="Comparator"/>
     <comp lib="0" loc="(110,290)" name="Pin">
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
@@ -325,5 +334,47 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(280,270)" to="(340,270)"/>
+    <wire from="(170,130)" to="(320,130)"/>
+    <wire from="(170,250)" to="(320,250)"/>
+    <wire from="(360,190)" to="(410,190)"/>
+    <wire from="(230,180)" to="(280,180)"/>
+    <wire from="(170,180)" to="(190,180)"/>
+    <wire from="(170,200)" to="(190,200)"/>
+    <wire from="(170,130)" to="(170,180)"/>
+    <wire from="(170,200)" to="(170,250)"/>
+    <wire from="(350,210)" to="(350,230)"/>
+    <wire from="(90,130)" to="(170,130)"/>
+    <wire from="(90,250)" to="(170,250)"/>
+    <wire from="(320,180)" to="(330,180)"/>
+    <wire from="(320,200)" to="(330,200)"/>
+    <wire from="(320,200)" to="(320,250)"/>
+    <wire from="(320,130)" to="(320,180)"/>
+    <wire from="(340,210)" to="(340,270)"/>
+    <wire from="(230,200)" to="(270,200)"/>
+    <wire from="(280,180)" to="(280,270)"/>
+    <comp lib="0" loc="(90,130)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(90,250)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="2" loc="(360,190)" name="Multiplexer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(230,190)" name="Comparator">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(410,190)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Output"/>
+    </comp>
   </circuit>
 </project>
